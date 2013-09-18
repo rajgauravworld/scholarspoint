@@ -1,0 +1,27 @@
+/*  Document   : style
+    Created on : Sep 8, 2013, 8:49:02 AM
+    Author     : rajgaurav
+    Description:
+      For common design of all pages in this web application 
+*/
+body{
+ /* background-image: url("../images/bg_slide_1.jpg");
+  background-position: top;
+  background-attachment: fixed;*/
+ background-color: #e6f4f8;
+}
+h1{
+ padding: 0rem;
+ margin: 0rem;
+}
+#heading{
+  background-color: #a42f2f;
+}
+#wrapper{
+  position: relative;
+  padding: 0rem;
+  width:90%;
+  border: 1px solid red;
+  margin: auto;
+  background-image:url("../images/greenish_background2.jpg");
+}
