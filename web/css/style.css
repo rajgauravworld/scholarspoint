@@ -10,13 +10,6 @@ body{
   background-attachment: fixed;*/
  background-color: #e6f4f8;
 }
-h1{
- padding: 0rem;
- margin: 0rem;
-}
-#heading{
-  background-color: #a42f2f;
-}
 #wrapper{
   position: relative;
   padding: 0rem;
@@ -24,4 +17,31 @@ h1{
   border: 1px solid red;
   margin: auto;
   background-image:url("../images/greenish_background2.jpg");
+}
+#heading{
+  background-color:#033300;
+}
+#heading img{
+  height:5rem;
+  width:auto;
+}
+#content{
+  height: auto;
+  min-height: 27rem;
+}
+#footer{
+  background-color: #493409;
+  height: auto;
+  min-height: 3rem;
+  color:white;
+  font-size: .8rem;
+  padding: 1rem;
+}
+#footer_menu{
+  float: right;
+  
+}
+#footer_menu p{
+  display: inline;
+  padding: 1rem;
 }
