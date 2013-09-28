@@ -4,6 +4,10 @@
     Description:
       For common design of all pages in this web application 
 */
+a{
+  text-decoration: none;
+  color: white;
+}
 body{
  background-color: #e6f4f8;
 }
