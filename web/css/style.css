@@ -63,9 +63,12 @@ body{
 }
 #footer_menu{
   float: right;
-  
 }
 #footer_menu p{
+  display: inline;
+  padding: 1rem;
+}
+#footer_menu p:hover{
   display: inline;
   padding: 1rem;
 }

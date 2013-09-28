@@ -1,0 +1,15 @@
+/* 
+    Document   : contact_us
+    Created on : Sep 28, 2013, 9:38:49 PM
+    Author     : rajgaurav
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+  display: block;
+}
+.namecard{
+  border-bottom: .5rem solid #033300;
+  padding: 1rem;
+}
