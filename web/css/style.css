@@ -22,13 +22,22 @@ body{
   background-color:#033300;
 }
 #heading img{
-  height:5rem;
+  height:6rem;
   width:auto;
 }
 #content{
   height: auto;
-  min-height: 27rem;
+  min-height: 30rem;
 }
+#content img{
+  width: auto;
+  height: 24rem;
+  padding: 1rem;
+}
+#left_content{
+  width: 70%;
+}
+
 #footer{
   background-color: #493409;
   height: auto;
