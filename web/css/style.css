@@ -5,9 +5,6 @@
       For common design of all pages in this web application 
 */
 body{
- /* background-image: url("../images/bg_slide_1.jpg");
-  background-position: top;
-  background-attachment: fixed;*/
  background-color: #e6f4f8;
 }
 #wrapper{
@@ -36,8 +33,22 @@ body{
 }
 #left_content{
   width: 70%;
+  float: left;
+  
 }
-
+#right_content{
+  width: 25%;
+  float: right;
+} 
+#login_area{
+  border: .3rem solid #f2faf2;
+  padding: 1rem;
+  margin: 1rem;
+}
+#login_area h2{
+  border: .1rem solid #f2faf2;
+  padding: .1rem;
+}
 #footer{
   background-color: #493409;
   height: auto;
