@@ -26,11 +26,11 @@ Details of the project team members and their skills.
         </div>
         <div class="namecard">
           <h2>Raj Gaurav Maurya</h2>
-          <p>Role in project : Programmer, Designer and Requirement Analyzer
+          <p>Role in project : Programmer, Designer and Requirement Analyzer</p>
+          <p>Contact me at : rajgauravworld@gmail.com</p>
         </div>
       </div>
       <%@include file="includes/footer.jsp" %>
       </div>
-    </div>
   </body>
 </html>
