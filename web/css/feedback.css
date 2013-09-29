@@ -1,0 +1,24 @@
+/* 
+    Document   : feedback
+    Created on : Sep 28, 2013, 10:40:18 PM
+    Author     : rajgaurav
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+  display: block;
+}
+input.text{
+  width:18.5rem;
+}
+#feedbackform {
+  border : .5rem solid #f2faf2;
+  width: 29rem;
+  margin: auto;
+  margin-top:1rem; 
+  padding: 1rem;
+}
+#feedbackform h1{
+   
+}
