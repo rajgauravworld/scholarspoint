@@ -32,11 +32,11 @@ public class ProcessFeedback extends HttpServlet {
       String uname=request.getParameter("uname");
       String email=request.getParameter("email");
       String feedback=request.getParameter("feedback");
-      out.println("name " + uname +"\n email " + email +"\n feedback"+
-              feedback +"\n");
       f.setName(uname);
       f.setEmail(email);
       f.setFeedback(feedback);
+      out.println("name " + uname +"\n email " + email +"\n feedback"+
+              feedback +"\n");
       feedbackFacade.create(f);
       out.println("Feedback submitted successfully !");
     } 
