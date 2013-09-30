@@ -4,9 +4,17 @@
         <servlet-name>ProcessFeedback</servlet-name>
         <servlet-class>sp.controller.ProcessFeedback</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProcessLogin</servlet-name>
+        <servlet-class>sp.controller.ProcessLogin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProcessFeedback</servlet-name>
         <url-pattern>/ProcessFeedback</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcessLogin</servlet-name>
+        <url-pattern>/ProcessLogin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

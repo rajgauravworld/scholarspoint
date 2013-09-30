@@ -24,7 +24,7 @@
             <tr>
               <td>Name</td>
               <td>
-                <input type="text" name="name" class="text" placeholder="Name">
+                <input type="text" name="uname" class="text" placeholder="Name">
               </td>
             </tr>
             <tr>
@@ -36,7 +36,7 @@
             <tr>
               <td>Feedback</td>
               <td>
-                <textarea cols="35" rows="5">
+                <textarea cols="35" rows="5" name="feedback">
                 </textarea>
               </td>
             </tr>

@@ -6,43 +6,29 @@ package sp.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import sp.bean.FeedbackFacadeLocal;
-import sp.model.Feedback;
 
-/**
- *
- * @author rajgaurav
- */
-public class ProcessFeedback extends HttpServlet {
-  @EJB
-  private FeedbackFacadeLocal feedbackFacade;
-  
-  protected void processRequest(HttpServletRequest request, 
-          HttpServletResponse response)
+public class ProcessLogin extends HttpServlet {
+
+  protected void processRequest(HttpServletRequest request, HttpServletResponse response)
           throws ServletException, IOException {
     response.setContentType("text/html;charset=UTF-8");
     PrintWriter out = response.getWriter();
     try {
-      Feedback f=new Feedback();
-      String uname=request.getParameter("uname");
-      String email=request.getParameter("email");
-      String feedback=request.getParameter("feedback");
-      out.println("name " + uname +"\n email " + email +"\n feedback"+
-              feedback +"\n");
-      f.setName(uname);
-      f.setEmail(email);
-      f.setFeedback(feedback);
-      feedbackFacade.create(f);
-      out.println("Feedback submitted successfully !");
-    } 
-    catch(Exception ex){
-      out.println("Exception " + ex);
-    }finally {      
+      /* TODO output your page here. You may use following sample code. */
+      out.println("<!DOCTYPE html>");
+      out.println("<html>");
+      out.println("<head>");
+      out.println("<title>Servlet ProcessLogin</title>");      
+      out.println("</head>");
+      out.println("<body>");
+      out.println("<h1>Servlet ProcessLogin at " + request.getContextPath() + "</h1>");
+      out.println("</body>");
+      out.println("</html>");
+    } finally {      
       out.close();
     }
   }
