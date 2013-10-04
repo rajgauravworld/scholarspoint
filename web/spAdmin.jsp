@@ -17,7 +17,9 @@
     <div id="wrapper">
       <%@include file="includes/header.jsp" %>
       <div id="content">
-        <div id="leftcontent"></div>
+        <div id="leftcontent">
+          <p><a href="viewFeedback.jsp">View Feedbacks</a></p>
+        </div>
         <div id="middlecontent"></div>
         <div id="rightcontent"></div>
       </div>

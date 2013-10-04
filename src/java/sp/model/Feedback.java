@@ -7,6 +7,7 @@ package sp.model;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 /**
  *
@@ -29,6 +30,20 @@ public class Feedback {
         catch(Exception ex){
         System.out.println("Feedback.storeFeedback() Exception :" + ex);
         }
+  }
+  public ResultSet fetchAllFeedback(){
+    try{
+        Connection con;
+        con = createConnection();
+        PreparedStatement ps=con.prepareStatement("select * from feedback");
+        ResultSet rs=ps.executeQuery();
+        ps.close();
+        con.close();
+        return rs;
+    }catch(Exception ex){
+      System.out.println("Feedback.fetchAllFeedback() Exception : " + ex);
+      return null;
+    }
   }
   private Connection createConnection(){//returns the Connection object
 try{
