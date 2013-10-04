@@ -15,7 +15,7 @@ body{
   position: relative;
   padding: 0rem;
   width:90%;
-  border: 1px solid red;
+  border: 1px solid grey;
   margin: auto;
   background-image:url("../images/greenish_background2.jpg");
 }

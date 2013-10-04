@@ -1,0 +1,26 @@
+/* 
+    Document   : admin
+    Created on : Oct 4, 2013, 10:16:38 PM
+    Author     : rajgaurav
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+  display: block;
+}
+#leftcontent{
+  width:15%;
+  float: left;
+  border: .2rem solid pink;
+}
+#middlecontent{
+  width: 68%;
+  float:left; 
+  border: .2rem solid blue;
+}
+#rightcontent{
+  width: 15%;
+  float: right;
+  border: .2rem solid green;
+}

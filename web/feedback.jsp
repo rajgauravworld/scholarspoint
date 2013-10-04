@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Feedback | Scholar's Point</title>
       <link rel="icon" type="image/png" href="images/iconsp_1.png">
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <link href="css/style.css" rel="stylesheet" />
@@ -43,6 +43,15 @@
             <tr>
               <td></td>
               <td>
+                <div id="msgbox">
+                  <%
+                    String s=(String)session.getAttribute("feedbackmsg");
+                    if(s!=null){
+                      out.println(s);
+                      session.setAttribute("feedbackmsg", null);
+                    }
+                    %>
+                </div>
                 <input type="submit" value="submit"/>
                 <input type="reset" value="Reset"/>
               </td>
