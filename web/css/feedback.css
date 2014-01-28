@@ -22,3 +22,20 @@ input.text{
 #feedbackform h1{
    
 }
+table{
+/*  border: 1px solid blue;*/
+  width: 100%;
+}
+table tr:hover{
+  //background-color: #ccffcc;
+}
+table th{
+  background-color:#033300;
+  color: white;
+}
+.feedback{
+  width:50%;
+}
+a{
+//  color:blue;
+}
