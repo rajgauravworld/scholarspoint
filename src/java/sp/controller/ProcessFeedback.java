@@ -6,6 +6,9 @@ package sp.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,15 +23,30 @@ public class ProcessFeedback extends HttpServlet {
     response.setContentType("text/html;charset=UTF-8");
     PrintWriter out = response.getWriter();
     try {
-     String name=request.getParameter("uname");
-     String email=request.getParameter("email");
-     String feedback=request.getParameter("feedback");
      Feedback f=new Feedback();
-     f.storeFeedback(name,email,feedback);
-     HttpSession session=request.getSession();
-     session.setAttribute("feedbackmsg", "Feedback submitted successfully !");
-     response.sendRedirect("feedback.jsp");
-     /*out.println("Feedback stored successfully !");*/
+     String formAction=request.getParameter("formAction");
+     if(formAction.equals("save")){
+        String name=request.getParameter("uname");
+        String email=request.getParameter("email");
+        String feedback=request.getParameter("feedback");
+        System.out.println("storeFeedback() Started !");
+
+        f.storeFeedback(name,email,feedback);
+        System.out.println("storeFeedback() Comleted !");
+
+        HttpSession session=request.getSession();
+        session.setAttribute("feedbackmsg", "<font color='green'>Feedback submitted successfully !</font>");
+        response.sendRedirect("feedback.jsp");
+     }
+     if(formAction.equals("display")){
+       //ResultSet rs=f.fetchAllFeedback();
+            System.out.println("Feedback has got the display Command !");
+            ArrayList feedList = f.fetchAllFeedback();
+            request.setAttribute("feedList", feedList);                 
+            // forwarding request to viewFeedback, so it can render feedList
+            RequestDispatcher rd =request.getRequestDispatcher("viewFeedback.jsp");
+            rd.forward(request, response);
+     }
     } finally {      
       out.close();
     }

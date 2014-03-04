@@ -11,6 +11,7 @@
       <link rel="icon" type="image/png" href="images/iconsp_1.png">
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <link href="css/style.css" rel="stylesheet" />
+      <link href="css/login_form.css" rel="stylesheet" />
   </head>
   <body>
     <div id="wrapper">

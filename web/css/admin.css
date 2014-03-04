@@ -1,26 +1,29 @@
-/* 
-    Document   : admin
-    Created on : Oct 4, 2013, 10:16:38 PM
-    Author     : rajgaurav
-    Description:
-        Purpose of the stylesheet follows.
-*/
 
 root { 
   display: block;
 }
 #leftcontent{
+  display: block;
   width:15%;
   float: left;
-  border: .2rem solid pink;
+  background-color: #033300;
+   position: relative;
 }
+#leftcontent a {
+  border-radius: 1rem;
+  border-top: .4rem solid #FFFFFF;
+  text-align: center;
+  line-height: 2rem;
+  display: block;
+}
+
 #middlecontent{
   width: 68%;
-  float:left; 
-  border: .2rem solid blue;
+  float: left; 
+ // border: .2rem solid blue;
 }
 #rightcontent{
   width: 15%;
   float: right;
-  border: .2rem solid green;
+  border: .2rem solid red;
 }

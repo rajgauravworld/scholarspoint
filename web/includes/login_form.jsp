@@ -4,12 +4,12 @@
     <table>
       <tr>
         <td>User ID</td>
-        <td><input type="text" placeholder="User ID" name="uid"></td>
+        <td><input type="text" placeholder="User ID" name="uid" class="login_input" required></td>
       </tr>
       <tr>
         <td>Password</td>
         <td>
-          <input type="password" name="pass" placeholder="Password">
+            <input type="password" name="pass" placeholder="Password" class="login_input" required>
         </td>
       </tr>
       <tr>

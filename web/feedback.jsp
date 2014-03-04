@@ -20,6 +20,7 @@
         <div id="feedbackform">
          <h1>Feedback Form</h1>
          <form name="feedback_form" method="post" action="ProcessFeedback">
+             <input type="hidden" name="formAction" value="save">
           <table>
             <tr>
               <td>Name</td>

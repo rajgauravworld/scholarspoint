@@ -1,0 +1,16 @@
+/* 
+    Created on : 2 Feb, 2014, 9:03:07 PM
+    Author     : RG
+*/
+#login_area{
+  border: .3rem solid #f2faf2;
+  padding: 1rem;
+  margin: 1rem;
+}
+#login_area h2{
+  border: .1rem solid #f2faf2;
+  padding: .1rem;
+}
+.login_input{
+    width:100%;
+}

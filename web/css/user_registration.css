@@ -7,19 +7,7 @@ and open the template in the editor.
     Created on : 28 Jan, 2014, 8:32:51 PM
     Author     : RG
 */
-h2{
-  //text-align: center;
-  width: 100%;
-  padding: 0;
-  margin-left: 1rem;
-  margin-bottom: 0;
-}
-hr{
- // width: 100%;
-  margin-left: 1rem;
-  margin-right: 1rem;
 
-}
 .subheading{
     color: green;
     font-size: 1.2rem;

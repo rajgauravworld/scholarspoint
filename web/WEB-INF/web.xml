@@ -8,6 +8,14 @@
         <servlet-name>ProcessFeedback</servlet-name>
         <servlet-class>sp.controller.ProcessFeedback</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SpecificUserRegistration</servlet-name>
+        <servlet-class>sp.controller.SpecificUserRegistration</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcessRegistration</servlet-name>
+        <servlet-class>sp.controller.ProcessRegistration</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProcessLogin</servlet-name>
         <url-pattern>/ProcessLogin</url-pattern>
@@ -16,12 +24,20 @@
         <servlet-name>ProcessFeedback</servlet-name>
         <url-pattern>/ProcessFeedback</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SpecificUserRegistration</servlet-name>
+        <url-pattern>/SpecificUserRegistration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcessRegistration</servlet-name>
+        <url-pattern>/ProcessRegistration</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
     <welcome-file-list>
-      <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

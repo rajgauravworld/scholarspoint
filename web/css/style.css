@@ -8,6 +8,19 @@ a{
   text-decoration: none;
   color: white;
 }
+h2{
+  //text-align: center;
+  width: 100%;
+  padding: 0;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+hr{
+ // width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
 body{
  background-color: #e6f4f8;
 }
@@ -44,20 +57,13 @@ body{
   width: 25%;
   float: right;
 } 
-#login_area{
-  border: .3rem solid #f2faf2;
-  padding: 1rem;
-  margin: 1rem;
-}
-#login_area h2{
-  border: .1rem solid #f2faf2;
-  padding: .1rem;
-}
+
 #footer{
+  clear: both;
   background-color: #493409;
   height: auto;
   min-height: 3rem;
-  color:white;
+  //color:white;
   font-size: .8rem;
   padding: 1rem;
 }
@@ -68,7 +74,8 @@ body{
   display: inline;
   padding: 1rem;
 }
-#footer_menu p:hover{
-  display: inline;
-  padding: 1rem;
+#footer_menu p a:hover{
+ // display: inline;
+ // padding: 1rem;
+ //color: #aff7eb;
 }

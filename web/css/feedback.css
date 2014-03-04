@@ -19,15 +19,9 @@ input.text{
   margin-top:1rem; 
   padding: 1rem;
 }
-#feedbackform h1{
-   
-}
 table{
 /*  border: 1px solid blue;*/
   width: 100%;
-}
-table tr:hover{
-  //background-color: #ccffcc;
 }
 table th{
   background-color:#033300;
@@ -36,6 +30,20 @@ table th{
 .feedback{
   width:50%;
 }
-a{
-//  color:blue;
+.feedmsg{
+    border: .5rem solid #033300;
+    border-radius: 0rem 3rem 0rem 0rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.feedmsg:nth-child(even){
+    background-color:#FFFFFF;
+}
+.feedmsg:nth-child(odd){
+    background-color: #D1E8D6;
+}
+
+.feedmsg p{
+    padding: 0;
+    margin: 0;
 }
